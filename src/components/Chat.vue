@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="container">
     <div class="app" v-show="isChatDisplayed">
       <div class="close" @click="toggleVisibility()">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
@@ -145,6 +145,8 @@ input {
   position: fixed;
   bottom: 0;
   right: 20px;
+  background: white;
+  z-index: 1111;
 }
 
 .messages {
@@ -163,12 +165,15 @@ input {
 
 .icon {
   position: fixed;
+  z-index: 1111;
   bottom: 10px;
   right: 10px;
   width: 40px;
   height: 40px;
   cursor: pointer;
   color: gray;
+  border-radius: 100%;
+  background: white;
 }
 
 .close {
@@ -179,5 +184,9 @@ input {
   height: 20px;
   cursor: pointer;
   color: gray;
+}
+
+.container {
+  z-index: 1111;
 }
 </style>
