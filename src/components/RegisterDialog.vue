@@ -29,7 +29,7 @@ export default {
 
 <style scoped>
 .register {
-  position: fixed;
+  position: absolute;
   bottom: 0;
   top: 0;
   left: 0;
